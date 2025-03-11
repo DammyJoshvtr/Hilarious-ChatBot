@@ -21,21 +21,23 @@ const ChatBody = () => {
   ];
 
   return (
-    <>
-      <div>
-        <input className='bg-amber-50 border-black border-2 rounded-lg fixed bottom-0 flex justify-center items-center outline-none left-1/2 -translate-x-1/2 w-3/7 h-15 m-2 p-1.5'
-          type="text"
-          placeholder="Type..."
-          value={inputChat}
-          onChange={ changeInputState }
-        />
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-3/4 bg-white p-3 border rounded-lg shadow-md grid grid-cols-[1fr_auto gap-2">
+      {/* Input Field */}
+      <input 
+        className="bg-amber-50 border-black border-2 rounded-lg outline-none w-full h-12 p-2"
+        type="text"
+        placeholder="Type..."
+        value={inputChat}
+        onChange={changeInputState}
+      />
 
-        <button className='fixed bottom-0 right-3/5'>
-          <MdSend size={24} />
-        </button>
-      </div>
-    </>
-  )
-}
+      {/* Send Button */}
+      <button className="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-700 flex items-center justify-center">
+        <MdSend size={24} />
+      </button>
+    </div>
+  );
+};
 
-export default ChatBody
+export default ChatBody;
+// left-1/2 -translate-x-1/2
