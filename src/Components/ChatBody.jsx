@@ -21,7 +21,7 @@ const ChatBody = () => {
   ];
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-3/4 bg-white p-3 border rounded-lg shadow-md grid grid-cols-[1fr_auto gap-2">
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-3/4 bg-white p-3 border rounded-lg shadow-md grid grid-cols-[1fr_auto] gap-2">
       {/* Input Field */}
       <input 
         className="bg-amber-50 border-black border-2 rounded-lg outline-none w-full h-12 p-2"
