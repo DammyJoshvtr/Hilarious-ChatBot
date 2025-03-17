@@ -34,9 +34,9 @@ const ChatBody = () => {
     <>
       {/* Chat Display */}
       <section>
-        <div>
+        <div className="h-100vh inline-block">
           {messages.map((message, index) => (
-            <div key={index}>
+            <div key={index} className="bg-teal-100 m-2 p-2">
               <p>
                 <strong>{message.sender === "user" ? "You: " : "Bot: "}</strong>
                 {message.text}
